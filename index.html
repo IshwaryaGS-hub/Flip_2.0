@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Memory Matching Game - Tailwind UI</title>
+
+<!-- TailwindCSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-100 via-white to-purple-100 flex items-center justify-center">
+
+<div class="w-full max-w-2xl bg-white shadow-2xl rounded-2xl p-6 text-center">
+
+  <h1 class="text-4xl font-extrabold text-indigo-600 mb-3">Memory Match</h1>
+
+  <div class="flex justify-center gap-10 text-lg mb-4">
+    <p class="font-semibold">Moves: <span id="moves" class="text-indigo-700 font-bold">0</span></p>
+    <p class="font-semibold">Matches: <span id="matches" class="text-indigo-700 font-bold">0</span></p>
+  </div>
+
+  <div id="grid" class="grid grid-cols-3 sm:grid-cols-4 gap-4 justify-center"></div>
+
+  <button id="restart"
+    class="mt-6 px-6 py-3 bg-indigo-600 text-white text-lg rounded-xl shadow-md hover:bg-indigo-700 transition">
+    Restart Game
+  </button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
